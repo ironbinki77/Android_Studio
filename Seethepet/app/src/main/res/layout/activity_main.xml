@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="326dp"
+        android:text="선택을 시작하시겠습니까?"
+        android:textColor="#808080"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/stachb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작한다"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/favpet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="좋아하는 애완동물은?"
+        android:textColor="#808080"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stachb1" />
+
+    <RadioGroup
+        android:id="@+id/petgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/favpet"
+        app:layout_constraintTop_toBottomOf="@+id/favpet">
+
+        <RadioButton
+            android:id="@+id/dograb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강아지"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="140dp" />
+
+        <RadioButton
+            android:id="@+id/catrab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고양이"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <RadioButton
+            android:id="@+id/rabrab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토끼"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/petimg"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="235dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ritimg"
+        app:layout_constraintStart_toEndOf="@+id/lefimg"
+        app:layout_constraintTop_toBottomOf="@+id/petgrp" />
+
+    <ImageButton
+        android:id="@+id/lefimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="318dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/petimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petgrp"
+        app:srcCompat="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/ritimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginBottom="318dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/petimg"
+        app:layout_constraintTop_toBottomOf="@+id/favpet"
+        app:srcCompat="@drawable/right" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
