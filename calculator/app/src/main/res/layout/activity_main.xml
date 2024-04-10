@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:columnCount="5"
+    android:rowCount="10">
+
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:hint="숫자 1 입력" />
+
+
+    <EditText
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:id="@+id/Edit2"
+        android:hint="숫자 2 입력" />
+
+
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn0"
+        android:text="0" />
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn1"
+        android:text="1" />
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn2"
+        android:text="2" />
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn3"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:text="4" />
+
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn5"
+        android:text="5" />
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn6"
+        android:text="6" />
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn7"
+        android:text="7" />
+
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn8"
+        android:text="8" />
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:id="@+id/btn9"
+        android:text="9" />
+
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:text="더하기" />
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="5"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:id="@+id/minus"
+        android:text="빼기" />
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="6"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:id="@+id/multiply"
+        android:text="곱하기" />
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="7"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:id="@+id/divide"
+        android:text="나누기" />
+
+
+    <TextView
+        android:layout_column="0"
+        android:layout_row="8"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:id="@+id/answer"
+        android:layout_margin="5dp"
+        android:layout_span="5"
+        android:text="계산 결과"
+        android:textColor="#FF0000"
+        android:textSize="20dp" />
+
+</GridLayout>
